@@ -1,27 +1,15 @@
 import { useState, useEffect,useRef } from "react";
 import NavBar from "./components/NavBar";
-import Card from "./components/Card";
-import SideBar from "./components/SideBar";
-import { ReactTyped } from "react-typed";
+// import Card from "./components/Card";
+
 import { motion, AnimatePresence } from "framer-motion";
+import MyProjects from "./components/MyProjects";
+import Header from "./components/Header";
+
 
 const App = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const headerRef = useRef(null);
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     // Change the threshold as per your requirement
-  //     if (window.scrollY > window.innerHeight - 100) {
-  //       setIsScrolled(true);
-  //     } else {
-  //       setIsScrolled(false);
-  //     }
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => window.removeEventListener("scroll", handleScroll);
-  // }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -54,40 +42,7 @@ const App = () => {
     <div className="h-screen font-primary overflow-auto snap-y snap-mandatory">
       <div className="container mx-auto">
         <div>
-          <header
-            ref={headerRef}
-            className="border min-h-screen relative font-primary snap-start"
-          >
-            {/* <h1 className="text-5xl font-bold ">rsl.</h1> */}
-            {/* Animate Sidebar */}
-            <SideBar />
-
-            <div className="absolute inset-0 flex flex-col items-center justify-center">
-              <h2 className="text-black text-center font-tertiary text-4xl leading-normal">
-                Hello
-              </h2>
-              <h2 className="text-black text-center font-tertiary text-4xl leading-normal">
-                I am Roknuzzaman Rasel
-              </h2>
-              <h2 className="text-black text-center font-tertiary text-4xl leading-normal">
-                I am a{" "}
-                <ReactTyped
-                  strings={[
-                    "Software Engineer",
-                    "Web Developer",
-                    "Frontend Developer",
-                  ]}
-                  typeSpeed={150}
-                  backSpeed={150}
-                  loop
-                />
-              </h2>
-            </div>
-
-            <button className="absolute text-xl bottom-28 right-0 transform -rotate-90 origin-bottom-right hover:text-gray-900 font-semibold">
-              dark mode.
-            </button>
-          </header>
+          <Header headerRef={headerRef} />
         </div>
 
         {/* Animate Navbar */}
@@ -115,34 +70,7 @@ const App = () => {
           </AnimatePresence>
 
           {/*projects section*/}
-          <section className="p-5 min-h-screen" id="projects">
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{
-                opacity: 1,
-                x: 0,
-                transition: {
-                  duration: 1,
-                },
-                exit: { opacity: 0, x: -50 },
-              }}
-              viewport={{ once: false }}
-            >
-              {/* Your Card components */}
-              <div className="flex flex-col items-end pb-10">
-                <h2 className="font-primary font-bold text-3xl mt-5">
-                  personal project
-                </h2>
-                <div className="my-1 w-20 h-1 bg-[#987750]"></div>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-              </div>
-            </motion.div>
-          </section>
+          <MyProjects />
         </div>
       </div>
     </div>
