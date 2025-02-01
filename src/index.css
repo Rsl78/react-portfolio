@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+    themes: false;
+}
+
+
+@theme {
+
+    --font-primary: "Manrope", "sans-serif";
+    --font-secondary: "Doto", "sans-serif";
+    --font-tertiary: "DotGothic16", "sans-serif";
+}
