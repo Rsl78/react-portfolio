@@ -16,13 +16,13 @@ const Header = ({ headerRef }) => {
       <SideBar />
 
       <div className="absolute inset-0 flex flex-col items-center justify-center">
-        <h2 className=" text-center font-lg font-tertiary text-5xl leading-normal">
+        <h2 className=" text-center font-lg font-tertiary text-2xl md:text-5xl leading-normal">
           Hello
         </h2>
-        <h2 className=" text-center font-lg font-tertiary text-5xl leading-normal">
+        <h2 className=" text-center font-lg font-tertiary text-2xl md:text-5xl leading-normal">
           I am Roknuzzaman Rasel
         </h2>
-        <h2 className=" text-center font-lg font-tertiary text-5xl leading-normal">
+        <h2 className=" text-center font-lg font-tertiary text-2xl md:text-5xl leading-normal">
           I am a{" "}
           <ReactTyped
             strings={[
