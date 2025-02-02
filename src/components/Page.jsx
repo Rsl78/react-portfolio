@@ -6,6 +6,8 @@ import NavBar from "./NavBar";
 import MyProjects from "./MyProjects";
 import { useContext } from "react";
 import { ThemeContext } from "../context";
+import AboutMe from "./AboutMe";
+
 
 
 
@@ -73,6 +75,7 @@ const Page = () => {
             </AnimatePresence>
 
             {/*projects section*/}
+           <AboutMe/>
             <MyProjects />
           </div>
         </div>
