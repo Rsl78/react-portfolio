@@ -19,7 +19,7 @@ const MyProjects = () => {
       >
         {/* Your Card components */}
         <div className="flex flex-col items-end pb-10">
-          <h2 className="font-primary font-bold text-3xl mt-5">
+          <h2 className="dark:text-[#dddddd] font-primary font-bold text-3xl mt-5">
             personal project
           </h2>
           <div className="my-1 w-20 h-1 bg-[#987750]"></div>
@@ -33,7 +33,7 @@ const MyProjects = () => {
 
         <div className="flex flex-col items-center justify-center pt-10">
           <div>
-            <a className="text-2xl font-semibold" href="">
+            <a className="dark:text-[#dddddd] hover:text-gray-600 dark:hover:text-blue-50 text-2xl font-semibold" href="">
               See More Projects
             </a>
             <div className=" w-12 h-1 bg-[#987750]"></div>

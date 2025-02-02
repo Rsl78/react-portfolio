@@ -1,10 +1,13 @@
 import MenuIcon from "../ui/MenuIcon";
-import MoonIcon from "../ui/MoonIcon";
-import SunIcon from "../ui/SunIcon";
+import Moon from "../assets/moon.svg";
+import Sun from "../assets/sun.svg";
+import { useContext } from "react";
+import { ThemeContext } from "../context";
 
 const NavBar = () => {
+  const { darkMode, setDarkMode } = useContext(ThemeContext);
   return (
-    <div className="navbar bg-base-100 bg-white sticky top-0 z-50">
+    <div className="navbar bg-[#fff] dark:bg-[#1d1b19] dark:text-[#dddddd]  sticky top-0 z-50">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -37,55 +40,71 @@ const NavBar = () => {
       </div>
 
       <div className="navbar-end lg:hidden">
-        <label className="swap swap-rotate">
-          {/* this hidden checkbox controls the state */}
-          <input
-            type="checkbox"
-            className="theme-controller"
-            value="synthwave"
-          />
-          <SunIcon />
-          <MoonIcon />
-        </label>
+        <li>
+          <a
+            className="bg-primary/20 dark:bg-primary/[7%] rounded-lg backdrop-blur-[2px] p-1 inline-block"
+            href="#"
+            onClick={() => setDarkMode((darkMode) => !darkMode)}
+          >
+            <img
+              src={darkMode ? Sun : Moon}
+              width="32"
+              height="32"
+              alt="Moon"
+            />
+          </a>
+        </li>
       </div>
 
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal ">
           <li>
-            <a className="font-semibold text-lg  ">contact</a>
+            <a className="font-semibold text-lg  hover:text-gray-600 dark:hover:text-blue-50">
+              contact
+            </a>
           </li>
 
           <li>
-            <a className="font-semibold text-lg  hover:text-gray-900">skills</a>
+            <a className="font-semibold text-lg hover:text-gray-600 dark:hover:text-blue-50">
+              skills
+            </a>
           </li>
           <li>
-            <a className="font-semibold text-lg  ">about me</a>
+            <a className="font-semibold text-lg hover:text-gray-600 dark:hover:text-blue-50 ">
+              about me
+            </a>
           </li>
           <li>
-            <a className="font-semibold text-lg  " id="projects">
+            <a
+              className="font-semibold text-lg hover:text-gray-600 dark:hover:text-blue-50 "
+              id="projects"
+            >
               projects
             </a>
           </li>
           <li>
-            <a className="font-semibold text-lg  " href="#home">
+            <a
+              className="font-semibold text-lg hover:text-gray-600 dark:hover:text-blue-50 "
+              href="#home"
+            >
               home
             </a>
           </li>
+          <li>
+            <a
+              className="hover:text-gray-600 dark:hover:text-blue-50 rounded-lg backdrop-blur-[2px] p-1 inline-block"
+              href="#"
+              onClick={() => setDarkMode((darkMode) => !darkMode)}
+            >
+              <img
+                src={darkMode ? Sun : Moon}
+                width="32"
+                height="32"
+                alt="Moon"
+              />
+            </a>
+          </li>
         </ul>
-        <label className="pl-10 swap swap-rotate">
-          {/* this hidden checkbox controls the state */}
-          <input
-            type="checkbox"
-            className="theme-controller"
-            value="synthwave"
-          />
-
-          {/* sun icon */}
-          <SunIcon />
-
-          {/* moon icon */}
-          <MoonIcon />
-        </label>
       </div>
     </div>
   );

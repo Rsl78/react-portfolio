@@ -1,25 +1,28 @@
 import SideBar from "../components/SideBar";
 import { ReactTyped } from "react-typed";
 import PropTypes from "prop-types";
+import { useContext } from "react";
+import { ThemeContext } from "../context";
 const Header = ({ headerRef }) => {
-    console.log(headerRef);
+    const {darkMode, setDarkMode} = useContext(ThemeContext);
+
   return (
     <header
       ref={headerRef}
-      className="border min-h-screen relative font-primary snap-start"
+      className="border min-h-screen relative font-primary snap-start text-[#000000] dark:text-[#dddddd] "
     >
       {/* <h1 className="text-5xl font-bold ">rsl.</h1> */}
       {/* Animate Sidebar */}
       <SideBar />
 
       <div className="absolute inset-0 flex flex-col items-center justify-center">
-        <h2 className="text-black text-center font-tertiary text-5xl leading-normal">
+        <h2 className=" text-center font-lg font-tertiary text-5xl leading-normal">
           Hello
         </h2>
-        <h2 className="text-black text-center font-tertiary text-5xl leading-normal">
+        <h2 className=" text-center font-lg font-tertiary text-5xl leading-normal">
           I am Roknuzzaman Rasel
         </h2>
-        <h2 className="text-black text-center font-tertiary text-5xl leading-normal">
+        <h2 className=" text-center font-lg font-tertiary text-5xl leading-normal">
           I am a{" "}
           <ReactTyped
             strings={[
@@ -34,8 +37,11 @@ const Header = ({ headerRef }) => {
         </h2>
       </div>
 
-      <button className="absolute text-xl bottom-28 right-0 transform -rotate-90 origin-bottom-right hover:text-gray-900 font-semibold">
-        dark mode.
+      <button
+        onClick={() => setDarkMode((darkMode) => !darkMode)}
+        className=" absolute text-xl bottom-28 right-0 transform -rotate-90 origin-bottom-right hover:text-gray-600 dark:hover:text-blue-50 font-semibold"
+      >
+        {darkMode ? "light mode" : "dark mode"}
       </button>
     </header>
   );
