@@ -1,6 +1,6 @@
 const SideBar = () => {
   return (
-    <div>
+    <div className="text-[#000000] dark:text-[#dddddd]">
       <h1 className="text-5xl font-bold">rsl.</h1>
       <div className="absolute  bottom-2 left-6  transform -rotate-90 origin-bottom-left">
         <ul className="flex space-x-4 gap-2 z-50">

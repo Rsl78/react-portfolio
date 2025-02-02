@@ -9,7 +9,7 @@ const Header = ({ headerRef }) => {
   return (
     <header
       ref={headerRef}
-      className="border min-h-screen relative font-primary snap-start text-[#000000] dark:text-[#dddddd] "
+      className="border min-h-screen relative font-primary snap-start  "
     >
       {/* <h1 className="text-5xl font-bold ">rsl.</h1> */}
       {/* Animate Sidebar */}
@@ -32,6 +32,7 @@ const Header = ({ headerRef }) => {
             ]}
             typeSpeed={150}
             backSpeed={150}
+            className="text-[#000000] dark:text-[#dddddd]"
             loop
           />
         </h2>
@@ -39,7 +40,7 @@ const Header = ({ headerRef }) => {
 
       <button
         onClick={() => setDarkMode((darkMode) => !darkMode)}
-        className=" absolute text-xl bottom-28 right-0 transform -rotate-90 origin-bottom-right hover:text-gray-600 dark:hover:text-blue-50 font-semibold"
+        className=" text-[#000000] dark:text-[#dddddd] absolute text-xl bottom-28 right-0 transform -rotate-90 origin-bottom-right hover:text-gray-600 dark:hover:text-blue-50 font-semibold"
       >
         {darkMode ? "light mode" : "dark mode"}
       </button>
