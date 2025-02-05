@@ -8,7 +8,7 @@ const NavBar = () => {
   const { darkMode, setDarkMode } = useContext(ThemeContext);
   return (
     <div className=" bg-[#fff] dark:bg-[#1d1b19] dark:text-[#dddddd]  sticky top-0 z-50">
-      <div className="navbar md:w-[91%] mx-auto">
+      <div className="navbar  md:w-[91%] mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

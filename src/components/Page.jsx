@@ -55,7 +55,7 @@ const Page = () => {
 
         {/* Main Content */}
         <div
-          className="snap-start px-3 md:px-0"
+          className="snap-start px-1 md:px-0"
           style={{ paddingTop: isScrolled ? "60px" : "0" }}
         >
           <AnimatePresence>

@@ -21,7 +21,7 @@ const ContactForm = () => {
           drop me a line
         </h2>
         <div className="w-20 my-1 h-1 bg-[#987750]"></div>
-        <p className="pt-5 lg:pt-10 text-2xl leading-7 lg:leading-12 tracking-tight whitespace-pre-line ">
+        <p className="pt-5 text-2xl leading-7 lg:leading-12 tracking-tight whitespace-pre-line ">
           If you have any suggestion, project or even you want to say “hello”,
           please fill out the form below and I will reply you shortly.
         </p>
