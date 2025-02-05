@@ -9,7 +9,7 @@ const Header = ({ headerRef }) => {
   return (
     <header
       ref={headerRef}
-      className="border min-h-screen relative font-primary snap-start  "
+      className="border min-h-screen relative font-primary snap-start mb-10 "
     >
       {/* <h1 className="text-5xl font-bold ">rsl.</h1> */}
       {/* Animate Sidebar */}

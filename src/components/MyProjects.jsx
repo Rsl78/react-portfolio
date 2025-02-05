@@ -4,7 +4,7 @@ import Card from "./Card";
 
 const MyProjects = () => {
   return (
-    <section className="p-5 min-h-screen" id="projects">
+    <section className="pb-10 min-h-screen" id="projects">
       <motion.div
         initial={{ opacity: 0, x: -50 }}
         whileInView={{
@@ -29,6 +29,7 @@ const MyProjects = () => {
           <Card />
           <Card />
           <Card />
+         
         </div>
 
         <div className="flex flex-col items-center justify-center pt-10">

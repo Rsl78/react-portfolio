@@ -1,12 +1,14 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
+
 @plugin "daisyui" {
     themes: false;
 }
 
-.dark{
+.dark {
     @apply bg-[#1d1b19] text-[#888]
 }
+
 
 
 @theme {
@@ -14,5 +16,32 @@
     --font-primary: "Manrope", "sans-serif";
     --font-secondary: "Doto", "sans-serif";
     --font-tertiary: "DotGothic16", "sans-serif";
+    --tracking-tight: 0.1em;
+
+    --color-fontLight: #777777;
+    --color-cardLight: #fafafa
 }
 
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #ffff inset !important;
+    -webkit-text-fill-color: bg-white !important;
+    border-color: #987750;
+}
+
+.dark input:-webkit-autofill,
+.dark input:-webkit-autofill:hover,
+.dark input:-webkit-autofill:focus,
+.dark input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #1d1b19 inset !important;
+    -webkit-text-fill-color: #888 !important;
+    border-color: #987750;
+}
+
+input:valid,
+textarea:valid {
+    border-color: #987750 !important;
+}

@@ -6,7 +6,7 @@ const Card = () => {
         <img
           src="../src/assets/OIP.jpeg"
           alt="Be Digital"
-          className="object-contain h-auto mb-4"
+          className="object-contain h-auto mb-4 "
         />
         <div className="flex space-x-2">
           <span className=" text-blue-800 text-sm font-semibold px-1 py-1 rounded">

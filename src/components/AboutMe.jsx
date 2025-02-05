@@ -26,7 +26,7 @@ const AboutMe = () => {
           <div className="my-1 w-20 h-1 bg-[#987750]"></div>
         </div>
         <div>
-          <p className="dark:text-[#888]  text-2xl font-primary md:max-w-[70%] leading-relaxed">
+          <p className="dark:text-[#888]  text-2xl font-primary md:max-w-[80%] leading-10 tracking-wide">
             {`I'm a Front-end Developer with over 3 years of
             hands on experience. I'm from Dhaka, Bangladesh. I code and create web elements
             for amazing people around the world. I like work with new people.
