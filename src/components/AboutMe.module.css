@@ -1,0 +1,87 @@
+/*------------------------------------------------------------------*/
+/*	07) CV Button
+/*------------------------------------------------------------------*/
+:root {
+    --border-color: rgba(0, 0, 0, 0.2);
+    /* Light mode border color */
+    --border-hover-color: #987750;
+    /* Light mode hover border color */
+    --text-color: #888;
+    /* Light mode text color */
+    --icon-color: #ddd;
+    /* Light mode icon color */
+}
+
+[data-theme="dark"] {
+    --border-color: rgba(255, 255, 255, 0.2);
+    /* Dark mode border color */
+    --border-hover-color: #987750;
+    /* Dark mode hover border color */
+    --text-color: #ccc;
+    /* Dark mode text color */
+    --icon-color: #aaa;
+    /* Dark mode icon color */
+}
+
+.resumo_fn_cv_btn {
+    display: flex;
+    position: relative;
+    margin-left: 70px;
+}
+
+.resumo_fn_cv_btn a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    width: 340px;
+    height: 220px;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--text-color);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 2px solid var(--border-color);
+}
+
+.resumo_fn_cv_btn a:hover {
+    border-color: var(--border-hover-color);
+}
+
+.resumo_fn_cv_btn .icon {
+    position: relative;
+    padding-top: 18px;
+    color: var(--icon-color);
+}
+
+.resumo_fn_cv_btn .fn__svg {
+    width: 58px;
+    height: 58px;
+    display: block;
+    margin-bottom: 14px;
+}
+
+.resumo_fn_cv_btn .fn__svg.arrow {
+    position: absolute;
+    left: 50%;
+    margin-left: -29px;
+    top: 8px;
+    will-change: transform;
+}
+
+.resumo_fn_cv_btn a:hover .fn__svg.arrow {
+    animation: down_animation 1s ease infinite alternate;
+    transform: translateY(0px);
+}
+
+@keyframes down_animation {
+    100% {
+        transform: translateY(-10px);
+    }
+
+    0% {
+        transform: translateY(0);
+    }
+}

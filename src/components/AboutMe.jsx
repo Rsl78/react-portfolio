@@ -1,3 +1,5 @@
+import styles from "./AboutMe.module.css";
+
 import { motion } from "framer-motion";
 import InboxIcon from "../assets/inbox.svg";
 import ArrowIcon from "../assets/arrow.svg";
@@ -74,11 +76,15 @@ const AboutMe = () => {
                 </tr>
               </table>
               <div className=" flex flex-col items-center justify-center pr-20 mt-10 md:mt-0">
-                <div className="resumo_fn_cv_btn ">
+                <div className={styles.resumo_fn_cv_btn}>
                   <a href="img/cv.jpg" download>
-                    <span className="icon">
-                      <img src={InboxIcon} alt="" className="fn__svg" />
-                      <img src={ArrowIcon} alt="" className="fn__svg arrow" />
+                    <span className={styles.icon}>
+                      <img src={InboxIcon} alt="" className={styles.fn__svg} />
+                      <img
+                        src={ArrowIcon}
+                        alt=""
+                        className={`${styles.fn__svg} ${styles.arrow}`}
+                      />
                     </span>
                     <span>Download CV</span>
                   </a>
