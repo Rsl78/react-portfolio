@@ -1,8 +1,8 @@
 import styles from "./AboutMe.module.css";
 
 import { motion } from "framer-motion";
-import InboxIcon from "../assets/inbox.svg";
-import ArrowIcon from "../assets/arrow.svg";
+import InboxIcon from "../assets/icons/inbox.svg";
+import ArrowIcon from "../assets/icons/arrow.svg";
 const AboutMe = () => {
   return (
     <section className=" min-h-screen" id="projects">

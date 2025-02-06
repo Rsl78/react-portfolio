@@ -1,6 +1,6 @@
 import MenuIcon from "../ui/MenuIcon";
-import Moon from "../assets/moon.svg";
-import Sun from "../assets/sun.svg";
+import Moon from "../assets/icons/moon.svg";
+import Sun from "../assets/icons/sun.svg";
 import { useContext } from "react";
 import { ThemeContext } from "../context";
 

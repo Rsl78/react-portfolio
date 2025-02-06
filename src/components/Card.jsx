@@ -1,5 +1,6 @@
 const Card = () => {
   return (
+    
     <div className=" bg-[#fafafa] dark:bg-[#181715] flex  shadow-lg rounded-lg overflow-hidden">
       {/* Image Section (30% width) */}
       <div className="w-[30%] flex flex-col items-center justify-center">

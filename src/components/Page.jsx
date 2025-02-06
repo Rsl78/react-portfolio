@@ -7,9 +7,11 @@ import { useContext } from "react";
 import { ThemeContext } from "../context";
 import AboutMe from "./AboutMe";
 import ContactForm from "./ContactForm";
+// import Modal from "./Modal";
 
 const Page = () => {
   const { darkMode } = useContext(ThemeContext);
+  
   const [isScrolled, setIsScrolled] = useState(false);
   const headerRef = useRef(null);
 
@@ -44,7 +46,7 @@ const Page = () => {
     <div
       className={`${
         darkMode ? "dark" : ""
-      } px-3 h-screen font-primary overflow-auto snap-y snap-mandatory`}
+      } px-3 h-screen font-primary overflow-auto snap-y snap-mandatory scrollbar-hide`}
     >
       <div className="container mx-auto">
         <div>
@@ -76,6 +78,7 @@ const Page = () => {
           </AnimatePresence>
 
           {/*projects section*/}
+
           <AboutMe />
           <MyProjects />
           <ContactForm />
