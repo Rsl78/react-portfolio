@@ -6,7 +6,7 @@ import Modal from "./Modal";
 const BlogSection = () => {
   const [shoWModal, setShowModal] = useState(false);
   return (
-    <section className="pb-10 min-h-screen" id="projects">
+    <section className="pb-20 min-h-screen" id="projects">
       {shoWModal && <Modal onClose = {() => setShowModal(false)} />}
       <motion.div
         initial={{ opacity: 0, x: -50 }}
@@ -36,7 +36,9 @@ const BlogSection = () => {
           
         </div>
 
-        <div className="flex flex-col items-center justify-center pt-10">
+        {/* Button for future use */}
+
+        {/* <div className="flex flex-col items-center justify-center pt-10">
           <div>
             <a
               className="dark:text-[#dddddd] hover:text-gray-600 dark:hover:text-blue-50 text-2xl font-semibold"
@@ -46,7 +48,7 @@ const BlogSection = () => {
             </a>
             <div className=" w-12 h-1 bg-[#987750]"></div>
           </div>
-        </div>
+        </div> */}
       </motion.div>
     </section>
   );
