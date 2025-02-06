@@ -1,26 +1,26 @@
-const Card = () => {
+import PropTypes from "prop-types";
+
+const Card = ({ onReadblogClick }) => {
   return (
-    
-    <div className=" bg-[#fafafa] dark:bg-[#181715] flex  shadow-lg rounded-lg overflow-hidden">
+    <div className=" bg-[#fafafa] dark:bg-[#181715] flex flex-col md:flex-row  shadow-lg rounded-lg overflow-hidden">
       {/* Image Section (30% width) */}
-      <div className="w-[30%] flex flex-col items-center justify-center">
+      <div className=" md:w-[30%] flex flex-col items-center justify-center">
         <img
           src="../src/assets/OIP.jpeg"
           alt="Be Digital"
           className="object-contain h-auto mb-4 "
         />
-        <div className="flex space-x-2">
+        {/* <div className="flex space-x-2">
           <span className=" text-blue-800 text-sm font-semibold px-1 py-1 rounded">
             HTML
           </span>
           <span className=" text-green-800 text-sm font-semibold px-1 py-1 rounded">
             CSS
           </span>
-          {/* Add more tags as needed */}
-        </div>
+        </div> */}
       </div>
       {/* Content Section (70% width) */}
-      <div className="w-[70%] p-6">
+      <div className="md:w-[70%] p-6">
         <h3 className=" text-[#000000] dark:text-[#dddddd] font-bold text-2xl mb-2">
           Be Digital
         </h3>
@@ -31,15 +31,20 @@ const Card = () => {
           quo sit.
         </p>
         <a
+          onClick={onReadblogClick}
           className="text-[#000000] dark:text-[#dddddd] hover:text-gray-600 dark:hover:text-blue-50 font-bold text-lg mt-4 inline-block"
           href="#"
         >
-          See Project
+          Read blog
         </a>
         <div className="w-8 h-0.5 bg-[#987750]"></div>
       </div>
     </div>
   );
+};
+
+Card.propTypes = {
+  onReadblogClick: PropTypes.func,
 };
 
 export default Card;

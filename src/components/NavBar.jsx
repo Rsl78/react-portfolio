@@ -19,21 +19,21 @@ const NavBar = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a className="font-semibold text-lg  ">contact</a>
-              </li>
-
-              <li>
-                <a className="font-semibold text-lg  ">skills</a>
+                <a className="font-semibold text-lg  ">home</a>
               </li>
 
               <li>
                 <a className="font-semibold text-lg  ">about me</a>
               </li>
+
               <li>
-                <a className="font-semibold text-lg  ">projects</a>
+                <a className="font-semibold text-lg  ">pojects</a>
               </li>
               <li>
-                <a className="font-semibold text-lg  ">home</a>
+                <a className="font-semibold text-lg  ">blog</a>
+              </li>
+              <li>
+                <a className="font-semibold text-lg  ">contact me</a>
               </li>
             </ul>
           </div>
@@ -61,18 +61,18 @@ const NavBar = () => {
           <ul className="menu menu-horizontal ">
             <li>
               <a className="font-semibold text-lg  hover:text-gray-600 dark:hover:text-blue-50">
-                contact
+                home
               </a>
             </li>
 
             <li>
               <a className="font-semibold text-lg hover:text-gray-600 dark:hover:text-blue-50">
-                skills
+                about me
               </a>
             </li>
             <li>
               <a className="font-semibold text-lg hover:text-gray-600 dark:hover:text-blue-50 ">
-                about me
+                projects
               </a>
             </li>
             <li>
@@ -80,7 +80,7 @@ const NavBar = () => {
                 className="font-semibold text-lg hover:text-gray-600 dark:hover:text-blue-50 "
                 id="projects"
               >
-                projects
+                blog
               </a>
             </li>
             <li>
@@ -88,7 +88,7 @@ const NavBar = () => {
                 className="font-semibold text-lg hover:text-gray-600 dark:hover:text-blue-50 "
                 href="#home"
               >
-                home
+                contact me
               </a>
             </li>
             <li>

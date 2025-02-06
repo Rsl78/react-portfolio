@@ -8,6 +8,7 @@ import WebsiteIcon from "../assets/icons/website.svg";
 import WebsiteDarkIcon from "../assets/icons/websiteDark.svg";
 import WebsiteHoverIcon from "../assets/icons/websiteHover.svg";
 import { ThemeContext } from "../context";
+import {motion} from "framer-motion";
 
 
 
@@ -15,7 +16,19 @@ import { ThemeContext } from "../context";
 const ProjectCard = () => {
     const {darkMode} = useContext(ThemeContext)
     return (
-      <div className="card backdrop-blur-lg w-auto rounded-xl  bg-black/2.5 dark:bg-white/0.75 ">
+      <motion.div
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+          transition: {
+            duration: 1,
+          },
+          exit: { opacity: 0, x: -50 },
+        }}
+        viewport={{ once: false }}
+        className="card backdrop-blur-lg w-auto rounded-xl  bg-black/2.5 dark:bg-white/0.75 "
+      >
         <figure className="px-5 pt-5 ">
           <img
             src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
@@ -87,7 +100,7 @@ const ProjectCard = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     );
 };
 

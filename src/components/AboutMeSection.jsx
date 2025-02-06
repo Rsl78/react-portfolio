@@ -1,9 +1,9 @@
-import styles from "./AboutMe.module.css";
+import styles from "./AboutMeSection.module.css";
 
 import { motion } from "framer-motion";
 import InboxIcon from "../assets/icons/inbox.svg";
 import ArrowIcon from "../assets/icons/arrow.svg";
-const AboutMe = () => {
+const AboutMeSection = () => {
   return (
     <section className=" min-h-screen" id="projects">
       <motion.div
@@ -98,4 +98,4 @@ const AboutMe = () => {
   );
 };
 
-export default AboutMe;
+export default AboutMeSection;
