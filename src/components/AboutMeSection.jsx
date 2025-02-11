@@ -3,9 +3,10 @@ import styles from "./AboutMeSection.module.css";
 import { motion } from "framer-motion";
 import InboxIcon from "../assets/icons/inbox.svg";
 import ArrowIcon from "../assets/icons/arrow.svg";
+
 const AboutMeSection = () => {
   return (
-    <section className=" min-h-screen" id="projects">
+    <section className="mb-20" id="projects">
       <motion.div
         initial={{ opacity: 0, x: -50 }}
         whileInView={{
@@ -19,11 +20,11 @@ const AboutMeSection = () => {
         viewport={{ once: false }}
       >
         {/* Your Card components */}
-        <div className="flex flex-col items-start pt-10 pb-3">
-          <h2 className="dark:text-[#dddddd] font-primary font-bold text-3xl mt-5">
+        <div className="flex flex-col items-start mb-3 ">
+          <h2 className="dark:text-[#dddddd] font-primary font-bold text-3xl">
             about me
           </h2>
-          <div className="my-1 w-20 h-1 bg-[#987750]"></div>
+          <div className="my-1 w-20 h-1 mb-3 bg-[#987750]"></div>
         </div>
         <div>
           <p className="dark:text-[#888]  text-2xl font-primary md:max-w-[80%] leading-10 tracking-wide">
@@ -75,7 +76,7 @@ const AboutMeSection = () => {
                   </th>
                 </tr>
               </table>
-              <div className=" flex flex-col items-center justify-center pr-20 mt-10 md:mt-0">
+              <div className=" flex flex-col justify-center pr-20 mt-10 md:mt-0">
                 <div className={styles.resumo_fn_cv_btn}>
                   <a href="img/cv.jpg" download>
                     <span className={styles.icon}>

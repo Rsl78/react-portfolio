@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+// import {createPortal} from 'react-dom';
 import Card from "./Card";
 import Modal from "./Modal";
 
@@ -21,8 +22,8 @@ const BlogSection = () => {
         viewport={{ once: false }}
       >
         {/* Your Card components */}
-        <div className="flex flex-col items-start pb-10">
-          <h2 className="dark:text-[#dddddd] font-primary font-bold text-3xl mt-5">
+        <div className="flex flex-col items-start pb-5">
+          <h2 className="dark:text-[#dddddd] font-primary font-bold text-3xl ">
             blogs
           </h2>
           <div className="my-1 w-20 h-1 bg-[#987750]"></div>

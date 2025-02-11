@@ -9,8 +9,9 @@ import AboutMeSection from "../components/AboutMeSection";
 import MyProjectsSection from "../components/MyProjectsSection";
 import BlogSection from "../components/BlogSection";
 import ContactMeSection from "../components/ContactMeSection";
-
-
+import ResumeSection from "../components/ResumeSection";
+import SkillsSection from "../components/SkillsSection";
+import FooterSection from "../components/FooterSection";
 
 const HomePage = () => {
   const { darkMode } = useContext(ThemeContext);
@@ -49,11 +50,13 @@ const HomePage = () => {
     <div
       className={`${
         darkMode ? "dark" : ""
-      } px-3 h-screen font-primary overflow-auto snap-y snap-mandatory scrollbar-hide`}
+      } px-3 md:px-0 h-screen font-primary overflow-auto  scrollbar-hide`}
+      // className={`${
+      //   darkMode ? "dark" : ""
+      // } px-3 h-screen font-primary overflow-auto snap-y snap-mandatory scrollbar-hide`}
     >
       <div className="container mx-auto">
         <div>
-            
           <Header headerRef={headerRef} />
         </div>
 
@@ -61,7 +64,8 @@ const HomePage = () => {
 
         {/* Main Content */}
         <div
-          className="snap-start px-1 md:px-0"
+          className=" px-1 md:px-0"
+          // className="snap-start px-1 md:px-0"
           style={{ paddingTop: isScrolled ? "60px" : "0" }}
         >
           <AnimatePresence>
@@ -79,16 +83,33 @@ const HomePage = () => {
                 </div>
               </motion.div>
             )}
+            
+              {/* <motion.div
+                key="navbar"
+                initial={{ y: -100 }}
+                animate={{ y: 0 }}
+                exit={{ y: -100 }}
+                transition={{ duration: 0.5 }}
+                className=" fixed top-0 left-0 w-full z-40"
+              >
+                <div className="">
+                  <NavBar />
+                </div>
+              </motion.div>
+             */}
           </AnimatePresence>
 
           {/*projects section*/}
 
           <AboutMeSection />
+          <SkillsSection />
+          <ResumeSection />
           <MyProjectsSection />
           <BlogSection />
           <ContactMeSection />
         </div>
       </div>
+        <FooterSection/>
     </div>
   );
 };
