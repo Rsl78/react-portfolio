@@ -31,15 +31,16 @@ const ContactMeSection = () => {
       className=" grid grid-cols-1 md:grid-cols-11 py-10 mx-auto container"
     >
       {/* Other content */}
-      <aside className="md:col-span-5 w-[95%] gap-4">
+      <aside className="md:col-span-5 w-[95%] gap-4 pb-5">
         <div className="pb-2">
           <h2 className="dark:text-[#dddddd] font-primary font-bold text-3xl">
             drop me a line
           </h2>
           <div className="w-20 my-1 h-1 bg-[#987750]"></div>
-          <p className="pt-2 text-lg leading-7 whitespace-pre-line ">
-            Share your thoughts, projects, or just say hi using the form
-            below, I&apos;ll get back to you soon!
+          <p className="pt-2 text-lg leading-7 tracking-tight whitespace-pre-line ">
+            Share your thoughts, projects, or just say hi using the form below
+            I&apos;ll get back to you soon! To know more about me, visit my
+            social profile.
           </p>
         </div>
 
@@ -50,7 +51,6 @@ const ContactMeSection = () => {
             src={darkMode ? EmailIconDark : EmailIconLight}
             alt="email"
           />
-          
 
           <div>
             <h3 className="font-bold text-lg  dark:text-[#dddddd]">Email</h3>
@@ -65,7 +65,6 @@ const ContactMeSection = () => {
             src={darkMode ? PhoneIconDark : PhoneIconLight}
             alt="Phone"
           />
-          
 
           <div>
             <h3 className="font-bold text-lg  dark:text-[#dddddd]">Phone</h3>
@@ -80,7 +79,6 @@ const ContactMeSection = () => {
             src={darkMode ? LocationIconDark : LocationIconLight}
             alt="location"
           />
-      
 
           <div>
             <h3 className="font-bold text-lg  dark:text-[#dddddd]">Location</h3>
@@ -89,10 +87,6 @@ const ContactMeSection = () => {
             </h4>
           </div>
         </div>
-
-        <p className="pt-2 text-lg leading-7 whitespace-pre-line ">
-          Visit my social profile to know more about me.
-        </p>
         <div>
           <IconLine />
         </div>
