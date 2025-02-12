@@ -18,7 +18,6 @@ const Header = ({ headerRef }) => {
       <SideBar />
 
       <div className="absolute inset-0 flex flex-col items-center justify-center space-y-2 ">
-        {/* <img src={ProfileImg} alt="profile image" className="rounded-full border-3 h-25 w-25" /> */}
 
         <div className="text-[#000000] dark:text-[#dddddd] text-center font-extralight font-tertiary text-2xl md:text-4xl leading-normal tracking-tight space-y-2">
           <h2>Hi,I&apos;m</h2>
@@ -38,7 +37,6 @@ const Header = ({ headerRef }) => {
             />
           </h2>
         </div>
-
         <IconLine />
       </div>
 
