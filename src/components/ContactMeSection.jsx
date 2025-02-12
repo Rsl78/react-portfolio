@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useContext } from "react";
+import { useContext,useState } from "react";
 import { ThemeContext } from "../context";
 
 import EmailIconLight from "../assets/icons/emailLight.svg";
@@ -17,6 +17,35 @@ import IconLine from "./IconLine";
 
 const ContactMeSection = () => {
   const { darkMode } = useContext(ThemeContext);
+  const [fieldValue, setFieldValue] = useState({
+    id: crypto.randomUUID(),
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  })
+
+  const handleChange = (e) => {
+    setFieldValue({
+      ...fieldValue,
+      [e.target.name]: e.target.value
+    })
+
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(fieldValue);
+
+    setFieldValue({
+      id: crypto.randomUUID(),
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+    });
+  }
+
   return (
     <motion.section
       initial={{ opacity: 0, x: -50 }}
@@ -94,16 +123,20 @@ const ContactMeSection = () => {
 
       {/* Contact form */}
       <div className=" pt-3 md:col-span-6 justify-items-end">
-        <form className="space-y-4 w-full ">
+        <form className="space-y-4 w-full " onSubmit={handleSubmit}>
           {/* First row */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
             {/* Name field */}
             <div className="flex items-center justify-center w-full">
-              <label className="relative w-full" htmlFor="">
+              <label className="relative w-full" htmlFor="name">
                 <input
                   required
                   type="text"
-                  className="w-full px-2.5 py-2 text-lg outline-none border-1 dark:border-[#ffffff33] rounded hover:border-[#987750]  duration-200 peer focus:border-[#987750] bg-inherit"
+                  id="name"
+                  name="name"
+                  value={fieldValue.name}
+                  onChange={handleChange}
+                  className="w-full px-2.5 py-2 text-lg outline-none border-gray-300 dark:border-[#6e6a6a33] rounded hover:border-[#987750]  duration-200 peer focus:border-[#987750] bg-inherit"
                 />
                 <span className="absolute left-0 top-[23%] px-1  tracking-wide pointer-events-none duration-200 ml-2 bg-[#fafafa] dark:bg-[#1d1b19]  peer-focus:-translate-y-5.5 peer-valid:text-sm peer-valid:-translate-y-5.5">
                   Name *
@@ -112,11 +145,15 @@ const ContactMeSection = () => {
             </div>
             {/* Email field */}
             <div className="flex items-center justify-center w-full">
-              <label className="relative w-full" htmlFor="">
+              <label className="relative w-full" htmlFor="email">
                 <input
                   required
                   type="text"
-                  className="w-full px-2.5 py-2 text-lg outline-none border-1 dark:border-[#ffffff33] rounded hover:border-[#987750]  duration-200 peer focus:border-[#987750] bg-inherit"
+                  id="email"
+                  name="email"
+                  value={fieldValue.email}
+                  onChange={handleChange}
+                  className="w-full px-2.5 py-2 text-lg outline-none border-gray-300 dark:border-[#6e6a6a33] rounded hover:border-[#987750]  duration-200 peer focus:border-[#987750] bg-inherit"
                 />
                 <span className="absolute left-0 top-[23%] px-1  tracking-wide pointer-events-none duration-200 ml-2 bg-[#fafafa] dark:bg-[#1d1b19]  peer-focus:-translate-y-5.5 peer-valid:text-sm peer-valid:-translate-y-5.5">
                   Email *
@@ -127,12 +164,16 @@ const ContactMeSection = () => {
 
           {/* Second row */}
           <div className="flex items-center justify-center w-full">
-            <label className="relative w-full" htmlFor="">
+            <label className="relative w-full" htmlFor="phone">
               <input
                 required
                 type="text"
+                id="phone"
+                name="phone"
+                value={fieldValue.phone}
+                onChange={handleChange}
                 autoComplete="off"
-                className="w-full px-2.5 py-2 text-lg outline-none border-1 dark:border-[#ffffff33] rounded hover:border-[#987750]  duration-200 peer focus:border-[#987750]   bg-inherit"
+                className="w-full px-2.5 py-2 text-lg outline-none border-1 border-gray-300 dark:border-[#6e6a6a33] rounded hover:border-[#987750]  duration-200 peer focus:border-[#987750]   bg-inherit"
               />
               <span className="absolute left-0 top-[23%] px-1  tracking-wide pointer-events-none duration-200 ml-2 bg-[#fafafa] dark:bg-[#1d1b19]  peer-focus:-translate-y-5.5 peer-valid:text-sm peer-valid:-translate-y-5.5">
                 Phone *
@@ -148,9 +189,11 @@ const ContactMeSection = () => {
                 required
                 id="message"
                 name="message"
+                value={fieldValue.message}
+                onChange={handleChange}
                 rows="5"
                 placeholder=" "
-                className="w-full  px-2.5 py-3 text-lg outline-none border-1 dark:border-[#ffffff33] rounded hover:border-[#987750] duration-200 peer focus:border-[#987750] bg-inherit "
+                className="w-full  px-2.5 py-3 text-lg outline-none border-gray-300 dark:border-[#6e6a6a33] rounded hover:border-[#987750] duration-200 peer focus:border-[#987750] bg-inherit "
               ></textarea>
               <span className="absolute left-0 top-3 px-1  tracking-wide pointer-events-none duration-200 ml-2 bg-[#fafafa] dark:bg-[#1d1b19]  peer-focus:-translate-y-5.5 peer-valid:text-sm peer-valid:-translate-y-5.5">
                 Message *

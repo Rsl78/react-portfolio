@@ -27,11 +27,8 @@ const AboutMeSection = () => {
           <div className="my-1 w-20 h-1 mb-3 bg-[#987750]"></div>
         </div>
         <div>
-          <p className="dark:text-[#888]  text-2xl font-primary md:max-w-[80%] leading-10 tracking-wide">
-            {`I'm a Front-end Developer with over 3 years of
-            hands on experience. I'm from Dhaka, Bangladesh. I code and create web elements
-            for amazing people around the world. I like work with new people.
-            New people are new experiences.`}
+          <p className="dark:text-[#888]  text-2xl font-primary md:max-w-[80%] leading-8 tracking-wide">
+            {`I'm a passionate Front-end Developer from Dhaka, Bangladesh. I thrive on creating dynamic web elements and enjoy the creativity and innovation that comes from collaborating with talented individuals.`}
           </p>
 
           <div className=" ">
@@ -68,10 +65,10 @@ const AboutMeSection = () => {
                   </th>
                 </tr>
                 <tr>
-                  <th className="pl-0 pt-0 dark:text-[#dddddd]">GITHUB</th>
+                  <th className="pl-0 pt-0 dark:text-[#dddddd]">LINKEDIN</th>
                   <th className="pt-0">
-                    <a href="https://github.com/Rsl78">
-                      https://github.com/Rsl78
+                    <a href="https://www.linkedin.com/in/rsl78/">
+                      www.linkedin.com/in/rsl78/
                     </a>
                   </th>
                 </tr>
