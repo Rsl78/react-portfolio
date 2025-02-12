@@ -8,6 +8,13 @@ import IconLine from "./IconLine";
 const Header = ({ headerRef }) => {
     const {darkMode, setDarkMode} = useContext(ThemeContext);
 
+    const getGreeting = () => {
+      const hour = new Date().getHours();
+      if (hour < 12) return "Good morning,";
+      if (hour < 18) return "Good afternoon,";
+      return "Good evening,";
+    };
+
   return (
     <header
       ref={headerRef}
@@ -18,12 +25,12 @@ const Header = ({ headerRef }) => {
       <SideBar />
 
       <div className="absolute inset-0 flex flex-col items-center justify-center space-y-2 ">
-
-        <div className="text-[#000000] dark:text-[#dddddd] text-center font-extralight font-tertiary text-2xl md:text-4xl leading-normal tracking-tight space-y-2">
-          <h2>Hi,I&apos;m</h2>
-          <h2>Md Roknuzzaman Rasel</h2>
+        <div className="text-[#000000] dark:text-[#dddddd] text-center font-extralight font-primary text-2xl md:text-4xl leading-normal tracking-tight space-y-2">
+          {/* <h2>Hi, I&apos;m</h2> */}
+          <h2>{getGreeting()}</h2>
+          <h2>I&apos;m Md Roknuzzaman Rasel</h2>
           <h2>
-            I am a{" "}
+            a {" "}
             <ReactTyped
               strings={[
                 "software engineer",
