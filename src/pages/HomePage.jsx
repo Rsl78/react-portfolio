@@ -10,8 +10,10 @@ import MyProjectsSection from "../components/MyProjectsSection";
 import BlogSection from "../components/BlogSection";
 import ContactMeSection from "../components/ContactMeSection";
 import ResumeSection from "../components/ResumeSection";
-import SkillsSection from "../components/SkillsSection";
 import FooterSection from "../components/FooterSection";
+import SkillsSection from "../components/skillSection/SkillsSection";
+
+
 
 const HomePage = () => {
   const { darkMode } = useContext(ThemeContext);
@@ -102,7 +104,7 @@ const HomePage = () => {
           {/*projects section*/}
 
           <AboutMeSection />
-          <SkillsSection />
+          <SkillsSection/>
           <ResumeSection />
           <MyProjectsSection />
           <BlogSection />
