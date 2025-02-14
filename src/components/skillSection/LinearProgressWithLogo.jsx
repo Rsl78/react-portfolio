@@ -40,7 +40,7 @@ const LinearProgressWithLogo = ({ skill }) => {
   }, [duration, value, isInView]);
 
   return (
-    <div ref={ref} className="flex items-center">
+    <div ref={ref} className="flex -ml-3  items-center">
       {/* Left column: logo with title below */}
       <div className="flex flex-col  items-center w-18">
         <img src={Logo} alt="logo" className="w-6 h-6 object-contain" />
@@ -49,7 +49,7 @@ const LinearProgressWithLogo = ({ skill }) => {
         </div>
       </div>
       {/* Right column: progress bar */}
-      <div className="ml-4 flex-1 relative">
+      <div className="ml-1 md:ml-4 flex-1 relative">
         <div
           className="h-2 w-full rounded"
           style={{ backgroundColor: barBgColor }}

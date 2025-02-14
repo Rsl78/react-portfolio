@@ -19,7 +19,7 @@ const TechnicalSkillsSection = () => {
         </div>
 
         {/* Right Section – 40% width: list main skills */}
-        <div className="col-span-4 pl-4">
+        <div className="col-span-4 pl-1 md:pl-4">
           <h3 className="dark:text-[#dddddd] font-bold text-lg mb-2">
             Categories
           </h3>
@@ -27,7 +27,7 @@ const TechnicalSkillsSection = () => {
             {technicalSkills.map((skill) => (
               <li
                 key={skill.id}
-                className={`cursor-pointer p-2 rounded mb-2 border 
+                className={`cursor-pointer py-2 px-1 rounded mb-2 border 
                   ${
                     selectedSkill.id === skill.id
                       ? "border-[#987750] bg-[#987750] text-white"
