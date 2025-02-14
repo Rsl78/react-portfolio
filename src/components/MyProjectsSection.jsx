@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard";
 
 const MyProjectsSection = () => {
   return (
-    <section className="mb-20 min-h-screen" id="projects">
+    <section className="mb-20" id="projects">
       <motion.div
         initial={{ opacity: 0, x: -50 }}
         whileInView={{
@@ -17,7 +17,7 @@ const MyProjectsSection = () => {
         viewport={{ once: false }}
       >
         {/* Your Card components */}
-        <div className="flex flex-col items-end pb-5">
+        <div className="flex flex-col items-end ">
           <h2 className="dark:text-[#dddddd] font-primary font-bold text-3xl">
             personal project
           </h2>
@@ -27,13 +27,11 @@ const MyProjectsSection = () => {
           <ProjectCard />
           <ProjectCard />
           <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
+          
         </div>
 
         {/* button for future use  */}
-        {/* <div className="flex flex-col items-center justify-center pt-10">
+        <div className="flex flex-col items-center justify-center pt-10">
           <div>
             <a
               className="dark:text-[#dddddd] hover:text-gray-600 dark:hover:text-blue-50 text-2xl font-semibold"
@@ -43,7 +41,7 @@ const MyProjectsSection = () => {
             </a>
             <div className=" w-12 h-1 bg-[#987750]"></div>
           </div>
-        </div> */}
+        </div>
       </motion.div>
     </section>
   );
