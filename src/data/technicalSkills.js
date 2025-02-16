@@ -241,4 +241,4 @@ const technicalSkills = [
   },
 ];
 
-export { technicalSkills };
+export default technicalSkills;

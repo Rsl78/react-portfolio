@@ -58,6 +58,7 @@ const ContactMeSection = () => {
       }}
       viewport={{ once: false }}
       className=" grid grid-cols-1 md:grid-cols-11 py-10 mx-auto container"
+      id="contact"
     >
       {/* Other content */}
       <aside className="md:col-span-5 w-[95%] gap-4 pb-5">

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { technicalSkills } from "../../data/tecnicalSkills";
+import { technicalSkills } from "../../data/index.js"
 import LinearProgressWithLogo from "./LinearProgressWithLogo";
 
 // Variants for the container to stagger children animations.
@@ -27,11 +27,11 @@ const TechnicalSkillsSection = () => {
     <div className="relative">
       <div className="grid grid-cols-10 gap-4">
         {/* Left Section – 60% width: show sub skills with staggered animation */}
-        <div className="col-span-6">
+        <div className="col-span-7">
           {/* Using key on the container forces a re-render when selectedSkill changes */}
           <motion.div
             key={selectedSkill.id}
-            className="space-y-3 pr-2"
+            className="space-y-4 pr-2 md:w-[80%]"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
@@ -45,7 +45,7 @@ const TechnicalSkillsSection = () => {
         </div>
 
         {/* Right Section – 40% width: list main skills */}
-        <div className="col-span-4 pl-1 md:pl-4">
+        <div className="col-span-3 pl-1 md:pl-4">
           <h3 className="dark:text-[#dddddd] font-bold text-lg mb-2">
             Categories
           </h3>
@@ -69,7 +69,7 @@ const TechnicalSkillsSection = () => {
       </div>
 
       {/* Divider between left and right sections */}
-      <div className="absolute left-[60%] top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-[#987750] to-transparent"></div>
+      <div className="absolute left-[70%] top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-[#987750] to-transparent"></div>
     </div>
   );
 };

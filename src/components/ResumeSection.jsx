@@ -30,7 +30,7 @@ const ResumeSection = () => {
           }}
           viewport={{ once: false }}
         >
-          <h2 className="dark:text-[#dddddd] font-primary font-bold text-3xl mt-5">
+          <h2 className="dark:text-[#dddddd] font-primary font-bold text-2xl mt-5">
             experience
           </h2>
           <div className="my-1 w-20 h-1 mb-5 bg-[#987750]"></div>
@@ -95,7 +95,7 @@ const ResumeSection = () => {
           }}
           viewport={{ once: false }}
         >
-          <h2 className="dark:text-[#dddddd] font-primary font-bold text-3xl mt-5">
+          <h2 className="dark:text-[#dddddd] font-primary font-bold text-2xl mt-5">
             education
           </h2>
           <div className="my-1 w-20 h-1 mb-5 bg-[#987750]"></div>

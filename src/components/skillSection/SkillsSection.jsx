@@ -1,4 +1,4 @@
-import RadialProgress from "./RadialProgress";
+// import RadialProgress from "./RadialProgress";
 import TechnicalSkillsSection from "./TechnicalSkillsSection";
 import { motion } from "framer-motion";
 const SkillsSection = () => {
@@ -17,20 +17,20 @@ const SkillsSection = () => {
       viewport={{ once: false }}
     >
   
-        <div className="grid grid-cols md:grid-cols-5 gap-8">
+        
           {/* Technical Skills */}
-          <div className="col-span-3  rounded">
-            <h2 className="dark:text-[#dddddd] font-primary font-bold text-xl">
-              technical skills
+          <div className=" rounded">
+            <h2 className="dark:text-[#dddddd] font-primary font-bold text-2xl">
+              skills
             </h2>
             <div className="my-1 w-10 h-1 mb-3 bg-[#987750]"></div>
-            <div>
+            <div className="">
               <TechnicalSkillsSection />
             </div>
           </div>
 
           {/* Professional Skills */}
-          <div className="col-span-2  rounded">
+          {/* <div className="col-span-2  rounded">
             <h2 className="dark:text-[#dddddd] font-primary font-bold text-xl">
               professional skills
             </h2>
@@ -41,8 +41,8 @@ const SkillsSection = () => {
               <RadialProgress value={80} title="Communication" />
               <RadialProgress value={75} title="Problem Solving" />
             </div>
-          </div>
-        </div>
+          </div> */}
+        
     
     </motion.div>
   );
