@@ -6,7 +6,7 @@ const blogData = [
     shortDescription:
       "A quick overview of our new feature that improves user experience.",
     fullDescription:
-      "In this blog post, we delve into the details of our latest feature. We explore the challenges we encountered during development and how we overcame them with creative solutions. You'll also find insights into the planning and execution phases that led to the final product.",
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit exercitationem praesentium, ipsum eum natus numquam ex totam aspernatur fuga culpa pariatur iste beatae quod quidem rerum laboriosam suscipit a mollitia quisquam accusantium. Odio nemo qui fuga labore quibusdam sed atque ex voluptatibus? Reprehenderit voluptatum quidem rerum esse accusamus nam dolorum",
     liveDemoPicture: "https://picsum.photos/seed/blog1/600/400",
   },
   {

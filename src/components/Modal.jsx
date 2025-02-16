@@ -20,7 +20,7 @@ const Modal = ({ onClose, blog, blogs, currentIndex, setCurrentIndex }) => {
   return (
     <div className="fixed inset-0 flex justify-center items-center bg-white/80 dark:bg-black/80 z-50">
       <div className="relative bg-white dark:bg-[#1d1b19] rounded-lg overflow-hidden w-11/12 max-w-5xl max-h-[90vh] flex flex-col">
-        <div className="overflow-auto scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-800">
+        <div className="overflow-auto scrollbar-thin scrollbar-thumb-gray-600 dark:scrollbar-track-gray-800">
           {/* Header */}
           <div className="p-4">
             <div className="flex justify-between items-center pb-4">
