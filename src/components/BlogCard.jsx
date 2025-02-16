@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 const BlogCard = ({ blog,onReadblogClick }) => {
     const { title, shortDescription, liveDemoPicture } = blog;
   return (
-    <div className="  bg-black/4 dark:bg-white/0.75 flex flex-col md:flex-row  shadow-accent rounded-lg  overflow-hidden p-2">
+    <div className="  bg-black/4 dark:bg-white/0.75 flex flex-col md:flex-row  shadow-accent rounded-lg  overflow-hidden p-3">
       {/* Image Section (30% width) */}
       <div className=" md:w-[30%] flex flex-col items-center justify-center">
         <img
