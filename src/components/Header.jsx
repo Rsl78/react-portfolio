@@ -27,10 +27,10 @@ const Header = ({ headerRef }) => {
       <div className="absolute inset-0 flex flex-col items-center justify-center space-y-2 ">
         <div className="text-[#000000] dark:text-[#dddddd] text-center font-extralight font-primary text-2xl md:text-4xl leading-normal tracking-tight space-y-2">
           {/* <h2>Hi, I&apos;m</h2> */}
-          <h2>{getGreeting()}</h2>
-          <h2>I&apos;m Md Roknuzzaman Rasel</h2>
+          <h2>{getGreeting()} I&apos;m</h2>
+          <h2>Md Roknuzzaman Rasel</h2>
           <h2>
-            a {" "}
+            a{" "}
             <ReactTyped
               strings={[
                 "software engineer",

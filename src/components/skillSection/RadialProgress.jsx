@@ -6,7 +6,7 @@ import { ThemeContext } from "../../context";
 const RadialProgress = ({ value = 80, title = "Progress" }) => {
   const size = 120;
   const duration = 2000;
-  const strokeWidth = 10;
+  const strokeWidth = 7;
   // Calculate radius and circumference for the SVG circle.
   const radius = (size - strokeWidth) / 2;
   const circumference = 2 * Math.PI * radius;
@@ -78,7 +78,7 @@ const RadialProgress = ({ value = 80, title = "Progress" }) => {
         </svg>
         {/* Centered percentage text */}
         <div
-          className="absolute text-xl font-bold"
+          className="absolute text-xl font-medium"
           style={{ color: fontColor }}
         >
           {displayedPercentage}%

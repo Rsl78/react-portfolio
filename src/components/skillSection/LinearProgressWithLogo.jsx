@@ -40,34 +40,41 @@ const LinearProgressWithLogo = ({ skill }) => {
   }, [duration, value, isInView]);
 
   return (
-    <div ref={ref} className="flex -ml-3  items-center">
+    <div ref={ref} className="flex -ml-3 items-center relative">
       {/* Left column: logo with title below */}
-      <div className="flex flex-col  items-center w-18">
+      <div className="flex flex-col items-center w-18">
         <img src={Logo} alt="logo" className="w-6 h-6 object-contain" />
         <div className="mt-0.5 text-xs font-base" style={{ color: fontColor }}>
           {title}
         </div>
       </div>
-      {/* Right column: progress bar */}
+      {/* Right column: progress bar with tooltip */}
       <div className="ml-1 md:ml-4 flex-1 relative">
         <div
-          className="h-2 w-full rounded"
+          className="h-0.5 w-full rounded"
           style={{ backgroundColor: barBgColor }}
         ></div>
         <div
-          className="h-2 rounded absolute top-0 left-0"
+          className="h-0.5 rounded absolute top-0 left-0"
           style={{
             backgroundColor: progressFillColor,
             width: `${displayedPercentage}%`,
             transition: "width 0.1s linear",
           }}
         ></div>
-        {/* Centered percentage text */}
-        <div
-          className="absolute inset-0 flex items-center justify-center text-[9px] font-base"
-          style={{ color: fontColor }}
+        {/* Tooltip that follows the progress fill */}
+        {/* <div
+          style={{ left: `${displayedPercentage}%` }}
+          className="absolute -top-6 transform -translate-x-1/2 transition-all duration-100 ease-linear text-white text-xs px-1 py-0.5 rounded"
         >
           {displayedPercentage}%
+        </div> */}
+        <div
+          style={{ left: `${displayedPercentage}%` }}
+          className="absolute -top-8 transform -translate-x-1/2 transition-all duration-100 ease-linear bg-[#292725] text-[#987750] text-xs px-1.5 py-1 rounded shadow-lg"
+        >
+          {displayedPercentage}%{/* Arrow at the bottom of the tooltip */}
+          <span className="absolute bottom-[-7px] left-1/2 transform -translate-x-1/2 border-4 border-transparent border-t-[#292725]"></span>
         </div>
       </div>
     </div>
