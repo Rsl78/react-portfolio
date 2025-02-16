@@ -15,7 +15,7 @@ const BlogCard = ({ blog,onReadblogClick }) => {
       </div>
       {/* Content Section (70% width) */}
       <div className="md:w-[70%] pt-2 md:pt-0 md:pl-4">
-        <h3 className=" text-[#000000] dark:text-[#dddddd] font-bold text-2xl mb-2">
+        <h3 className=" text-[#000000] dark:text-[#dddddd] font-bold text-xl mb-2">
           {title}
         </h3>
         <p className=" text-base">
@@ -24,7 +24,7 @@ const BlogCard = ({ blog,onReadblogClick }) => {
         <a
           onClick={onReadblogClick}
 
-          className="text-[#000000] dark:text-[#dddddd] hover:text-gray-600 dark:hover:text-blue-50 font-bold text-lg mt-4 inline-block"
+          className="text-[#000000] dark:text-[#dddddd] hover:text-gray-600 dark:hover:text-blue-50 font-bold text-lg mt-2 inline-block"
           href="#"
         >
           Read blog
