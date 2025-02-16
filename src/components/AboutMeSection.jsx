@@ -15,7 +15,6 @@ const AboutMeSection = () => {
           transition: {
             duration: 1,
           },
-          exit: { opacity: 0, x: -50 },
         }}
         viewport={{ once: false }}
       >
@@ -34,44 +33,51 @@ const AboutMeSection = () => {
           <div className=" ">
             <div className="mt-8 flex flex-col md:flex-row">
               <table className="table text-left text-lg  max-w-[70%]">
-                <tr className="">
-                  <th className="pl-0 pt-0  dark:text-[#dddddd]">NAME</th>
-                  <th className="pt-0 font-medium">Md Roknuzzaman Rasel</th>
-                </tr>
-                <tr>
-                  <th className="pl-0 pt-0  dark:text-[#dddddd]">BIRTHDAY</th>
-                  <th className="pt-0 font-medium">7th January 1999</th>
-                </tr>
-                <tr>
-                  <th className="pl-0 pt-0 dark:text-[#dddddd]">AGE</th>
-                  <th className="pt-0 font-medium">26 years</th>
-                </tr>
-                <tr>
-                  <th className="pl-0 pt-0 dark:text-[#dddddd]">ADDRESS</th>
-                  <th className="pt-0 font-medium">Dhaka Bangladesh</th>
-                </tr>
-                <tr>
-                  <th className="pl-0 pt-0 dark:text-[#dddddd]">PHONE</th>
-                  <th className="pt-0 font-medium">
-                    <a href="tel:+8801762888622">(+880) 176 2888 622</a>
-                  </th>
-                </tr>
-                <tr>
-                  <th className="pl-0 pt-0 dark:text-[#dddddd]">EMAIL</th>
-                  <th className="pt-0 font-medium">
-                    <a href="mailto:roknuzzaman.rasel78@gmail.com">
-                      roknuzzaman.rasel78@gmail.com
-                    </a>
-                  </th>
-                </tr>
-                <tr>
-                  <th className="pl-0 pt-0 dark:text-[#dddddd]">LINKEDIN</th>
-                  <th className="pt-0 font-medium">
-                    <a href="https://www.linkedin.com/in/rsl78/">
-                      www.linkedin.com/in/rsl78/
-                    </a>
-                  </th>
-                </tr>
+                <thead>
+                  <tr>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="">
+                    <td className="pl-0 pt-0  dark:text-[#dddddd]">NAME</td>
+                    <td className="pt-0 font-medium">Md Roknuzzaman Rasel</td>
+                  </tr>
+                  <tr>
+                    <td className="pl-0 pt-0  dark:text-[#dddddd]">BIRTHDAY</td>
+                    <td className="pt-0 font-medium">7th January 1999</td>
+                  </tr>
+                  <tr>
+                    <td className="pl-0 pt-0 dark:text-[#dddddd]">AGE</td>
+                    <td className="pt-0 font-medium">26 years</td>
+                  </tr>
+                  <tr>
+                    <td className="pl-0 pt-0 dark:text-[#dddddd]">ADDRESS</td>
+                    <td className="pt-0 font-medium">Dhaka Bangladesh</td>
+                  </tr>
+                  <tr>
+                    <td className="pl-0 pt-0 dark:text-[#dddddd]">PHONE</td>
+                    <td className="pt-0 font-medium">
+                      <a href="tel:+8801762888622">(+880) 176 2888 622</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="pl-0 pt-0 dark:text-[#dddddd]">EMAIL</td>
+                    <td className="pt-0 font-medium">
+                      <a href="mailto:roknuzzaman.rasel78@gmail.com">
+                        roknuzzaman.rasel78@gmail.com
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="pl-0 pt-0 dark:text-[#dddddd]">LINKEDIN</td>
+                    <td className="pt-0 font-medium">
+                      <a href="https://www.linkedin.com/in/rsl78/">
+                        www.linkedin.com/in/rsl78/
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
               </table>
               <div className=" flex flex-col justify-center pr-20 mt-10 md:mt-0">
                 <div className={styles.resumo_fn_cv_btn}>

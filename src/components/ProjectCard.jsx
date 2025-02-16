@@ -23,11 +23,11 @@ const ProjectCard = ({ project }) => {
         transition: {
           duration: 1,
         },
-        exit: { opacity: 0, x: -50 },
+        
       }}
       viewport={{ once: false }}
       // className="card backdrop-blur-lg w-auto rounded-xl  bg-black/2.5 dark:bg-white/0.75 "
-      className="card backdrop-blur-lg w-auto rounded-xl  bg-black/2.5 dark:bg-white/0.75 "
+      className="card backdrop-blur-lg w-auto rounded-xl  bg-black/4 dark:bg-white/0.75 "
     >
       <figure className="px-5 pt-5 ">
         <img
@@ -38,7 +38,7 @@ const ProjectCard = ({ project }) => {
       </figure>
       <div className="p-5">
         <div className="flex justify-between items-center ">
-          <h2 className="text-2xl font-bold dark:text-[#dddddd]">{name}</h2>
+          <h2 className="text-xl font-bold dark:text-[#dddddd]">{name}</h2>
           <div className="flex space-x-2.5">
             <div className=" bg-black/5 dark:bg-white/3 rounded-full p-2 group">
               <a href={liveLink}>

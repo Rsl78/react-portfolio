@@ -12,7 +12,7 @@ const ResumeSection = () => {
           transition: {
             duration: 1,
           },
-          exit: { opacity: 0, x: -50 },
+          
         }}
         viewport={{ once: false }}
         className="grid grid-cols-1 md:grid-cols-2 justify-between mb-20"
@@ -26,7 +26,7 @@ const ResumeSection = () => {
             transition: {
               duration: 1,
             },
-            exit: { opacity: 0, x: -50 },
+            
           }}
           viewport={{ once: false }}
         >
@@ -91,11 +91,11 @@ const ResumeSection = () => {
             transition: {
               duration: 1,
             },
-            exit: { opacity: 0, x: -50 },
+            
           }}
           viewport={{ once: false }}
         >
-          <h2 className="dark:text-[#dddddd] font-primary font-bold text-2xl mt-5">
+          <h2 className="dark:text-[#dddddd] font-primary font-bold text-2xl  mt-20 md:mt-5  ">
             education
           </h2>
           <div className="my-1 w-20 h-1 mb-5 bg-[#987750]"></div>

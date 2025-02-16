@@ -18,7 +18,7 @@ const MyProjectsSection = () => {
           opacity: 1,
           x: 0,
           transition: { duration: 1 },
-          exit: { opacity: 0, x: -50 },
+          
         }}
         viewport={{ once: false }}
       >

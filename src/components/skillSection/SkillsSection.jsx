@@ -12,7 +12,7 @@ const SkillsSection = () => {
         transition: {
           duration: 1,
         },
-        exit: { opacity: 0, x: -50 },
+        
       }}
       viewport={{ once: false }}
     >
