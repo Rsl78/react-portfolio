@@ -109,18 +109,19 @@ const ContactMeSection = () => {
           message: "",
         });
         setErrors({});
-      }).catch((error) =>{
-        console.log(error);
-          toast.error("Failed to send message. Try again later!", {
-            position: "top-right",
-            autoClose: 3000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            theme: darkMode ? "dark" : "light",
-          });
       })
+      .catch((error) => {
+        console.log(error);
+        toast.error("Failed to send message. Try again later!", {
+          position: "top-right",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          theme: darkMode ? "dark" : "light",
+        });
+      });
   };
 
   return (
@@ -156,7 +157,7 @@ const ContactMeSection = () => {
           {/* Email */}
           <div className=" flex  items-center space-x-2 group">
             <img
-              className=" dark:border-[#dddddd] border-2 rounded-full w-10 h-10 p-1 group-hover:border-[#987750]"
+              className=" dark:border-[#dddddd] border-2 rounded-full w-8 h-8 p-1 group-hover:border-[#987750]"
               src={darkMode ? EmailIconDark : EmailIconLight}
               alt="email"
             />
@@ -170,7 +171,7 @@ const ContactMeSection = () => {
           {/* Phone */}
           <div className="py-1 flex  items-center space-x-2 group">
             <img
-              className=" dark:border-[#dddddd] border-2 rounded-full w-10 h-10 p-1 group-hover:border-[#987750]"
+              className=" dark:border-[#dddddd] border-2 rounded-full w-8 h-8 p-1 group-hover:border-[#987750]"
               src={darkMode ? PhoneIconDark : PhoneIconLight}
               alt="Phone"
             />
@@ -184,7 +185,7 @@ const ContactMeSection = () => {
           {/* Location */}
           <div className=" flex  items-center space-x-2 group">
             <img
-              className=" dark:border-[#dddddd] border-2 rounded-full w-10 h-10 p-1 group-hover:border-[#987750]"
+              className=" dark:border-[#dddddd] border-2 rounded-full w-8 h-8 p-1 group-hover:border-[#987750]"
               src={darkMode ? LocationIconDark : LocationIconLight}
               alt="location"
             />
