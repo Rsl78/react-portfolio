@@ -1,10 +1,16 @@
 import styles from "./AboutMeSection.module.css";
 
 import { motion } from "framer-motion";
-import InboxIcon from "../assets/icons/inbox.svg";
-import ArrowIcon from "../assets/icons/arrow.svg";
+import ArrowIconLight from "../assets/icons/arrowLight.svg"
+import ArrowIconDark from "../assets/icons/arrowDark.svg"
+import InboxIconLight from "../assets/icons/inboxLight.svg"
+import InboxIconDark from "../assets/icons/inboxDark.svg"
+import { useContext } from "react";
+import { ThemeContext } from "../context";
 
 const AboutMeSection = () => {
+  const {darkMode} = useContext(ThemeContext);
+
   return (
     <section className="mb-20" id="about">
       <motion.div
@@ -47,13 +53,15 @@ const AboutMeSection = () => {
                     <td className="pl-0 pt-0  dark:text-[#dddddd]">BIRTHDAY</td>
                     <td className="pt-0 font-medium">7th January 1999</td>
                   </tr>
-                  <tr>
+                  {/* <tr>
                     <td className="pl-0 pt-0 dark:text-[#dddddd]">AGE</td>
                     <td className="pt-0 font-medium">26 years</td>
-                  </tr>
+                  </tr> */}
                   <tr>
                     <td className="pl-0 pt-0 dark:text-[#dddddd]">ADDRESS</td>
-                    <td className="pt-0 font-medium">Dhaka Bangladesh</td>
+                    <td className="pt-0 font-medium">
+                      72, North Road, Dhanmondi, Dhaka Bangladesh
+                    </td>
                   </tr>
                   <tr>
                     <td className="pl-0 pt-0 dark:text-[#dddddd]">PHONE</td>
@@ -83,9 +91,9 @@ const AboutMeSection = () => {
                 <div className={styles.resumo_fn_cv_btn}>
                   <a href="img/cv.jpg" download>
                     <span className={styles.icon}>
-                      <img src={InboxIcon} alt="" className={styles.fn__svg} />
+                      <img src={darkMode ? InboxIconDark : InboxIconLight} alt="" className={styles.fn__svg} />
                       <img
-                        src={ArrowIcon}
+                        src={darkMode ? ArrowIconDark : ArrowIconLight}
                         alt=""
                         className={`${styles.fn__svg} ${styles.arrow}`}
                       />
