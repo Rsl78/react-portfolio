@@ -99,15 +99,47 @@ const NavBar = () => {
 
         <div className="navbar-end hidden lg:flex">
           <ul className="menu menu-horizontal">
-            {["home", "about me", "projects", "blog", "contact me"].map(
-              (item, index) => (
-                <li key={index}>
-                  <a className="font-semibold text-lg hover:text-gray-600 dark:hover:text-blue-50">
-                    {item}
-                  </a>
-                </li>
-              )
-            )}
+            <li>
+              <a
+                href="#home"
+                className="font-semibold text-lg hover:text-gray-600 dark:hover:text-blue-50"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="#about"
+                className="font-semibold text-lg hover:text-gray-600 dark:hover:text-blue-50"
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                href="#projects"
+                className="font-semibold text-lg hover:text-gray-600 dark:hover:text-blue-50"
+              >
+                Projects
+              </a>
+            </li>
+            <li>
+              <a
+                href="#blogs"
+                className="font-semibold text-lg hover:text-gray-600 dark:hover:text-blue-50"
+              >
+                Blogs
+              </a>
+            </li>
+            <li>
+              <a
+                href="#about"
+                className="font-semibold text-lg hover:text-gray-600 dark:hover:text-blue-50"
+              >
+                Contact Me
+              </a>
+            </li>
+
             <li>
               <a
                 className="hover:text-gray-600 dark:hover:text-blue-50 rounded-lg backdrop-blur-[2px] p-1 inline-block"

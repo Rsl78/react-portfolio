@@ -1,4 +1,5 @@
 import { useContext, useState } from "react";
+import { ThemeContext } from "../context";
 import PropTypes from "prop-types";
 
 import LinkedInIconLight from "../assets/icons/linkedinLight.svg";
@@ -10,31 +11,28 @@ import LinkedInIconDark from "../assets/icons/linkedinDark.svg";
 import GithubIconDark from "../assets/icons/githubDark.svg";
 import InstagramIconDark from "../assets/icons/instagramDark.svg";
 import FacebookIconDark from "../assets/icons/facebookDark.svg";
-import { ThemeContext } from "../context";
-
-
 
 const icons = [
   {
-    lightIcon:LinkedInIconLight,
+    lightIcon: LinkedInIconLight,
     darkIcon: LinkedInIconDark,
     label: "LinkedIn",
     href: "https://www.linkedin.com/in/rsl78/",
   },
   {
-    lightIcon:GithubIconLight,
+    lightIcon: GithubIconLight,
     darkIcon: GithubIconDark,
     label: "gitHub",
     href: "https://github.com/Rsl78",
   },
   {
-    lightIcon:InstagramIconLight,
+    lightIcon: InstagramIconLight,
     darkIcon: InstagramIconDark,
     label: "instagram",
     href: "",
   },
   {
-    lightIcon:FacebookIconLight,
+    lightIcon: FacebookIconLight,
     darkIcon: FacebookIconDark,
     label: "facebook",
     href: "",
@@ -42,7 +40,7 @@ const icons = [
 ];
 
 const IconCircle = ({ icon, isActive, onHover }) => {
-    const {darkMode} = useContext(ThemeContext)
+  const { darkMode } = useContext(ThemeContext);
   return (
     <a
       href={icon.href}
@@ -57,7 +55,11 @@ const IconCircle = ({ icon, isActive, onHover }) => {
         }`}
       >
         <div className="flex-shrink-0  pr-1 flex items-center justify-center w-11 h-11 ">
-          <img src={darkMode? icon.darkIcon : icon.lightIcon} alt={icon.label} className="w-8 h-8 p-1" />
+          <img
+            src={darkMode ? icon.darkIcon : icon.lightIcon}
+            alt={icon.label}
+            className="w-8 h-8 p-1"
+          />
         </div>
         <span
           className={` font-bold text-sm dark:text-[#ffffff] transition-all duration-300 ${
@@ -79,7 +81,7 @@ const IconLine = () => {
       {icons.map((icon, index) => (
         <IconCircle
           key={index}
-          icon = {icon}
+          icon={icon}
           isActive={activeIndex === index}
           onHover={() => setActiveIndex(index)}
         />
@@ -89,8 +91,8 @@ const IconLine = () => {
 };
 
 IconCircle.propTypes = {
-    icon: PropTypes.object,
-    isActive: PropTypes.bool,
-    onHover: PropTypes.func,
-}
+  icon: PropTypes.object,
+  isActive: PropTypes.bool,
+  onHover: PropTypes.func,
+};
 export default IconLine;

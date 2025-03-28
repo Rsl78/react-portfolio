@@ -1,13 +1,13 @@
 const personalProjects = [
   {
     id: 1,
-    name: "Project Alpha",
-    liveLink: "https://projectalpha.example.com",
+    name: "Personal Protfolio",
+    liveLink: "https://rsl78.vercel.app/",
     githubLink: "https://github.com/username/projectalpha",
-    shortDescription: "A responsive web application for task management.",
-    tools: ["React", "Tailwind CSS", "Node.js"],
+    shortDescription: "A responsive personal portfolio website.",
+    tools: ["React", "Tailwind CSS", "Framer Motion"],
     detailedDescription:
-      "Project Alpha is a task management tool that allows users to create, edit, and track their daily tasks. The application features real-time updates and dynamic filtering options to enhance productivity.",
+      "This is my personal portfolio website where I showcase my projects, skills, and experiences. The site is fully responsive and built with React and Tailwind CSS for a modern look.",
     picture: "https://picsum.photos/seed/projectalpha/300/200",
   },
   {

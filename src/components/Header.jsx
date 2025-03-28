@@ -19,6 +19,7 @@ const Header = ({ headerRef }) => {
     <header
       ref={headerRef}
       className="border min-h-screen relative font-primary snap-start mb-20 "
+      id="home"
     >
       {/* <h1 className="text-5xl font-bold ">rsl.</h1> */}
       {/* Animate Sidebar */}

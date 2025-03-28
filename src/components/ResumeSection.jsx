@@ -41,16 +41,16 @@ const ResumeSection = () => {
                 <TickIcon />
               </div>
               <div className="timeline-end pr-1 mb-5 ">
-                <h2 className="text-xl font-bold  dark:text-[#dddddd]">
+                <h2 className="text-xl font-semibold  dark:text-[#dddddd]">
                   Software Engineer (Intern)
                 </h2>
                 <p className="py-1 text-lg italic">
                   October, 2024 - December, 2024
                 </p>
-                <h3 className="text-xl font-semibold dark:text-[#dddddd]">
+                <h3 className="text-base font-semibold dark:text-[#dddddd]">
                   Cityscape Internation Limited
                 </h3>
-                <h3 className="text-lg font-semibold dark:text-[#dddddd]">
+                <h3 className="text-base font-semibold dark:text-[#dddddd]">
                   Dhaka, Bangladesh
                 </h3>
               </div>
@@ -67,12 +67,12 @@ const ResumeSection = () => {
                 <h2 className="text-xl font-bold  dark:text-[#dddddd]">
                   Research Assistant
                 </h2>
-                <p className="py-1 text-lg italic">May, 2015 - April, 2017</p>
-                <h3 className="text-xl font-semibold dark:text-[#dddddd]">
+                <p className="py-1 text-lg italic">August, 2023 - April, 2024</p>
+                <h3 className="text-base font-semibold dark:text-[#dddddd]">
                   Artifical Intelligence and Bioinformatics Research Group
                   (AIBIG), Universiti Teknologi Malaysia
                 </h3>
-                <h3 className="text-lg font-semibold dark:text-[#dddddd]">
+                <h3 className="text-base font-semibold dark:text-[#dddddd]">
                   Johor, Malaysia
                 </h3>
               </div>
@@ -112,10 +112,10 @@ const ResumeSection = () => {
                 <p className="py-1 text-lg italic">
                   Februay, 2020 - April, 2024
                 </p>
-                <h3 className="text-xl font-semibold dark:text-[#dddddd]">
+                <h3 className="text-base font-semibold dark:text-[#dddddd]">
                   Universiti Teknologi Malaysia
                 </h3>
-                <h3 className="text-lg font-semibold dark:text-[#dddddd]">
+                <h3 className="text-base font-semibold dark:text-[#dddddd]">
                   Johor, Malaysia
                 </h3>
               </div>
@@ -133,10 +133,10 @@ const ResumeSection = () => {
                   Higher Secondary School Certificate (Science)
                 </h2>
                 <p className="py-1 text-lg italic">May, 2015 - April, 2017</p>
-                <h3 className="text-xl font-semibold dark:text-[#dddddd]">
+                <h3 className="text-base font-semibold dark:text-[#dddddd]">
                   Police Lines School & College, Rangpur
                 </h3>
-                <h3 className="text-lg font-semibold dark:text-[#dddddd]">
+                <h3 className="text-base font-semibold dark:text-[#dddddd]">
                   Rangpur, Bangladesh
                 </h3>
               </div>
@@ -156,10 +156,10 @@ const ResumeSection = () => {
                 <p className="py-1 text-lg italic">
                   January, 2007 - February, 2015
                 </p>
-                <h3 className="text-xl font-semibold dark:text-[#dddddd]">
+                <h3 className="text-base font-semibold dark:text-[#dddddd]">
                   Rangpur Zilla School
                 </h3>
-                <h3 className="text-lg font-semibold dark:text-[#dddddd]">
+                <h3 className="text-base font-semibold dark:text-[#dddddd]">
                   Rangpur, Bangladesh
                 </h3>
               </div>

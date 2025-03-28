@@ -32,7 +32,7 @@ const ProjectCard = ({ project }) => {
       <figure className="px-5 pt-5 ">
         <img
           src={picture}
-          alt="Shoes"
+          alt="project image"
           className="rounded-xl w-full h-56 object-cover"
         />
       </figure>
