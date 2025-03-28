@@ -19,7 +19,7 @@ const personalProjects = [
     tools: ["Vue", "Bootstrap", "Firebase"],
     detailedDescription:
       "Project Beta is designed for small business owners to showcase and sell their handmade crafts. The platform includes a secure payment gateway, product reviews, and a custom dashboard for sellers.",
-    picture: "https://picsum.photos/seed/projectbeta/300/200",
+    picture: "https://picsum.photos/seed/projectalpha/300/200",
   },
   {
     id: 3,

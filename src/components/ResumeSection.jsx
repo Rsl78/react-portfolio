@@ -42,10 +42,10 @@ const ResumeSection = () => {
               </div>
               <div className="timeline-end pr-1 mb-5 ">
                 <h2 className="text-xl font-semibold  dark:text-[#dddddd]">
-                  Software Engineer (Intern)
+                  Software Engineer
                 </h2>
                 <p className="py-1 text-lg italic">
-                  October, 2024 - December, 2024
+                  October, 2024 - February, 2025
                 </p>
                 <h3 className="text-base font-semibold dark:text-[#dddddd]">
                   Cityscape Internation Limited
