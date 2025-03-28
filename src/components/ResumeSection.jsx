@@ -45,7 +45,7 @@ const ResumeSection = () => {
                   Software Engineer
                 </h2>
                 <p className="py-1 text-lg italic">
-                  October, 2024 - February, 2025
+                  September, 2024 - February, 2025
                 </p>
                 <h3 className="text-base font-semibold dark:text-[#dddddd]">
                   Cityscape Internation Limited
