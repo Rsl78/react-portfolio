@@ -23,17 +23,16 @@ const ProjectCard = ({ project }) => {
         transition: {
           duration: 1,
         },
-        
       }}
       viewport={{ once: false }}
       // className="card backdrop-blur-lg w-auto rounded-xl  bg-black/2.5 dark:bg-white/0.75 "
       className="card backdrop-blur-lg w-auto rounded-xl  bg-black/4 dark:bg-white/0.75 "
     >
-      <figure className="px-5 pt-5 ">
+      <figure className="p-4 ">
         <img
           src={picture}
           alt="project image"
-          className="rounded-xl w-full h-56 object-cover"
+          className="rounded-xl w-full h-56 object-fit"
         />
       </figure>
       <div className="p-5">
@@ -41,7 +40,7 @@ const ProjectCard = ({ project }) => {
           <h2 className="text-xl font-bold dark:text-[#dddddd]">{name}</h2>
           <div className="flex space-x-2.5">
             <div className=" bg-black/5 dark:bg-white/3 rounded-full p-2 group">
-              <a href={liveLink}>
+              <a href={liveLink} target="_blank" rel="noopener noreferrer">
                 <img
                   src={darkMode ? WebsiteDarkIcon : WebsiteIcon}
                   alt="Website icon"
@@ -59,7 +58,7 @@ const ProjectCard = ({ project }) => {
               </a>
             </div>
             <div className=" bg-black/5 dark:bg-white/3 rounded-full p-2 group">
-              <a href={githubLink}>
+              <a href={githubLink} target="_blank" rel="noopener noreferrer">
                 <img
                   src={darkMode ? SourceDarkIcon : SourceIcon}
                   alt="Source icon"
@@ -82,7 +81,10 @@ const ProjectCard = ({ project }) => {
         <p className="py-2">{shortDescription}</p>
         <div className="card-actions pt-1 dark:text-[#dddddd] justify-end">
           {tools.map((tool, index) => (
-            <div key={index} className=" bg-black/5 dark:bg-white/3 text-sm rounded-sm font-semibold px-2 py-0.5">
+            <div
+              key={index}
+              className=" bg-black/5 dark:bg-white/3 text-sm rounded-sm font-semibold px-2 py-0.5"
+            >
               {tool}
             </div>
           ))}
